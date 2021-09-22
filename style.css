@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background: rgb(32,23,190);
+    background: linear-gradient(90deg, rgba(32,23,190,1) 0%, rgba(9,9,121,1) 24%, rgba(187,44,158,1) 72%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: antiquewhite;
+    flex-wrap: wrap;
+    font-weight: 50;
+    text-shadow: 0 0 20px black;
+    color: white;
+    font-family: 'Koulen', cursive;
+}
+.middle{
+    margin-top:50px ;
+    width: 80%;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 16%, rgba(253,29,223,1) 100%, rgba(252,176,69,1) 100%);
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+    font-family: 'Preahvihear', sans-serif;
+    animation: sok 10s linear infinite;
+}
+@keyframes sok {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.q{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.btn-container{
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.btn{
+    height: 40px;
+}
+.overlay{
+   position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.9);
+    backdrop-filter: blur(3px);
+    z-index: 4;
+}
+.window_modal{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 39%, rgba(108,253,29,1) 100%, rgba(186,135,62,1) 100%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: -3px 3px 33px 3px rgba(0,0,0,1);
+    -webkit-box-shadow: -3px 3px 33px 3px rgba(0,0,0,1);
+    -moz-box-shadow: -3px 3px 33px 3px rgba(0,0,0,1);
+    border-radius: 20px;
+    z-index: 5;
+}
+.window_modal .lookReward​{
+    font-family: 'Koulen', cursive;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+button{
+position: relative;
+}
+.window_close{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: red;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    background-color: green;
+    color: white;
+}
+.window_close:hover{
+    transition: 0.5s;
+    background-color:blue;
+}
+.score{
+    text-align: center;
+    margin-top: 30%;
+}
+.yourscore{
+    margin-top: 10%;
+    text-align: center;
+}
+.party{
+    margin-top: 10%;
+    text-align: center;
+}
+.startQuiz{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgb(32,23,190);
+background: linear-gradient(90deg, rgba(32,23,190,1) 0%, rgba(9,9,121,1) 24%, rgba(187,44,158,1) 72%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: -3px 3px 33px 3px rgba(0,0,0,1);
+    -webkit-box-shadow: -3px 3px 33px 3px rgba(0,0,0,1);
+    -moz-box-shadow: -3px 3px 33px 3px rgba(0,0,0,1);
+    border-radius: 20px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.overlayStart{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.9);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+}
+.fa{
+    font-size: 20px;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 1px;
+}
+.letStart{
+    padding-top: 10px;
+}
+h5{
+    line-height: 1.5;
+}
+footer{
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    background: rgb(32,23,190);
+    background: linear-gradient(90deg, rgba(32,23,190,1) 0%, rgba(9,9,121,1) 24%, rgba(187,44,158,1) 72%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reward_modal{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgb(32,23,190);
+    background: linear-gradient(90deg, rgb(48, 80, 153) 0%, rgb(41, 156, 112) 24%, rgba(187,44,158,1) 72%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: -3px 3px 33px 3px rgba(0,0,0,1);
+    -webkit-box-shadow: -3px 3px 33px 3px rgba(0,0,0,1);
+    -moz-box-shadow: -3px 3px 33px 3px rgba(0,0,0,1);
+    border-radius: 20px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.reward_modal .openReward{
+    margin-top: 30px;
+    font-family: 'Koulen', cursive;
+}
+.hidden{
+    display: none;
+}
